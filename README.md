@@ -8,6 +8,7 @@ This repository contains my progress in learning new technologies, including Jav
 - TypeScript
 - C++
 - C#
+- NodeJS
 - NextJS
 - ReactJS
 - .NET Core
