@@ -53,6 +53,7 @@ class BinarySearchTree{
       
         return false;
       }
+      // depth first search
       minData(){
           if(!this.root){
             throw new Error("List is empty!");
@@ -77,6 +78,30 @@ class BinarySearchTree{
         }
         return current.data;
     }
+    // breadth first search
+    bfs() {
+      if (!this.root) {
+        throw new Error("List is empty!");
+      }
+    
+      let queue = [this.root];
+      let bfsList = [];
+    
+      while (queue.length > 0) {
+        let current = queue.shift();
+        bfsList.push(current.data);
+    
+        if (current.left) {
+          queue.push(current.left);
+        }
+    
+        if (current.right) {
+          queue.push(current.right);
+        }
+      }
+    
+      return bfsList;
+    }
 
 }
 
@@ -90,3 +115,4 @@ bst.insert(78);
 bst.insert(82);
 console.log(`max data is ${bst.maxData()}, min data is ${bst.minData()}`);
 console.log(bst.contains(23), bst.contains(31), bst.contains(95),bst.contains(35));
+console.log(bst.bfs());
