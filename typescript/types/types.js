@@ -70,8 +70,8 @@ uniqueIdentifier = 1000;
 var keys = ["asdasd", 12, "asdsad"];
 var courseId = 1000; //good usage
 // non null assertion operator
-var userId;
-userId.toString();
+// let userId: number | null;
+// userId!.toString();
 //literal types
 var weekdays = 7;
 var session = "online";
@@ -79,5 +79,5 @@ var user = "premium user";
 // Note: interfaces are constructs of the objects and they are extendible however the type aliases can be used as same thing but they are not extendible.
 // By creating objects or complicated things use interfaces , to more simple things use type aliases.
 // Type Assertions
-var input = document.getElementById("inputexp");
-var input2 = document.getElementById("inputexp2");
+// const input = <HTMLInputElement> document.getElementById("inputexp")
+// const input2 =  document.getElementById("inputexp2") as HTMLInputElement;

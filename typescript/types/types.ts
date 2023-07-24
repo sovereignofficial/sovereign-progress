@@ -98,8 +98,8 @@ const keys: (number | string)[] = ["asdasd",12,"asdsad"]
 let courseId : number | null = 1000; //good usage
 
 // non null assertion operator
-let userId: number | null;
-userId!.toString();
+// let userId: number | null;
+// userId!.toString();
 
 //literal types
 let weekdays: 7 = 7;
@@ -123,5 +123,5 @@ interface Course{
 // By creating objects or complicated things use interfaces , to more simple things use type aliases.
 
 // Type Assertions
-const input = <HTMLInputElement> document.getElementById("inputexp")
-const input2 =  document.getElementById("inputexp2") as HTMLInputElement;
+// const input = <HTMLInputElement> document.getElementById("inputexp")
+// const input2 =  document.getElementById("inputexp2") as HTMLInputElement;
