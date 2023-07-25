@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        //ES Version to be compiled
+        "target": "ESNext",
+        //instead of using include property
+        // "rootDir": "../module"
+        //compiled in dist folder
+        "outDir": "dist",
+        //module type
+        "module": "ESNext",
+        "noEmitOnError": true,
+        "sourceMap":true,
+        "strictNullChecks":true,
+    },
+    //files to be compiled
+    "files": [
+        "intro.ts",
+    ],
+    "include": [
+        // inside the modules directory , ** determines that other directories within module will be comiled and then the single * determines all the files will be compiled.
+        "../modules/**/*"
+    ],
+    //to cancellation of specific files included above.
+    "exclude": [
+        //do not compile the files who called asSyntax
+        "../modules/**/asSyntax*"
+    ]
+}
