@@ -11,7 +11,7 @@ This repository contains my progress in learning new technologies, including Jav
 - NodeJS
 - NextJS
 - ReactJS
-- .NET Core
+- .NET 
 
 ## Algorithms
 
